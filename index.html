@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Content Automation Hub — a premium content operations dashboard by Takieddine Drici.">
+  <meta name="theme-color" content="#17191c">
+  <title>AI Content Automation Hub · Takieddine Drici</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="AI Content Automation Hub home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-copy"><strong>Takieddine Drici</strong><small>Web Developer &amp; AI Builder</small></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+      <a href="#features">Features</a>
+      <a href="#analytics">Analytics</a>
+      <a href="#workflows">Workflows</a>
+      <a class="nav-cta nav-cta--mobile" href="#dashboard">Launch platform <span>→</span></a>
+    </nav>
+
+    <a class="nav-cta nav-cta--desktop" href="#dashboard">Launch platform <span>→</span></a>
+    <button class="icon-button mobile-menu-button" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero-kicker"><span class="hero-kicker__dot"></span>Intelligent content operations</div>
+        <h1>AI Content <span>Automation Hub</span></h1>
+        <p class="hero__tagline">Orchestrate content strategy</p>
+        <p class="hero__description">Create. Analyze. Publish. Amplify. Leverage machine learning for complete content cycle mastery — from the first topic idea to the published post.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#dashboard">Explore workspace <span>→</span></a>
+          <a class="ghost-link" href="#features">See capabilities</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-label="Content workflow preview">
+        <div class="hero-window">
+          <div class="hero-window__top"><div class="window-dots"><span></span><span></span><span></span></div><span>content-hub.app</span></div>
+          <div class="hero-window__body">
+            <div class="mini-sidebar"><span class="mini-sidebar__logo">✦</span><i></i><i></i><i></i><i></i></div>
+            <div class="mini-dashboard">
+              <div class="mini-dashboard__heading"><div><span></span><strong></strong></div><b></b></div>
+              <div class="mini-metrics"><i></i><i></i><i></i></div>
+              <div class="mini-chart"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card floating-card--one">✦ <span><strong>AI signal</strong>High-intent topic detected</span></div>
+        <div class="floating-card floating-card--two">✓ <span><strong>Workflow ready</strong>3 posts queued</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-intro">
+        <div><span class="eyebrow">Built for momentum</span><h2>One system for the entire content loop.</h2></div>
+        <p>Replace fragmented tools and repetitive handoffs with one focused workspace designed around how modern teams actually ship content.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-card__icon">✦</div><h3>Intelligent Insights</h3><p>Topic scoring built from search demand and audience signals, refreshed daily.</p></article>
+        <article class="feature-card"><div class="feature-card__icon">✎</div><h3>AI Editor</h3><p>Draft, revise, and tighten copy with inline suggestions you approve one at a time.</p></article>
+        <article class="feature-card"><div class="feature-card__icon">▤</div><h3>Central Content Library</h3><p>Every draft, asset, and published post in one searchable place.</p></article>
+        <article class="feature-card"><div class="feature-card__icon">⌕</div><h3>Deep SEO Optimization</h3><p>Keyword coverage and on-page checks surfaced before you hit publish.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard-section" id="dashboard">
+    <div class="container">
+      <div class="dashboard-header">
+        <div><span class="eyebrow eyebrow--dark">Operations overview</span><h2>Content Ecosystem Hub</h2><p>Everything in motion, at a glance.</p></div>
+        <div class="toast" id="toast" role="status" aria-live="polite" hidden>✓ <span></span></div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card"><span>Drafts</span><strong id="draft-count">3</strong><small>Needs attention</small></div>
+        <div class="stat-card"><span>Scheduled</span><strong id="scheduled-count">2</strong><small>Ready to ship</small></div>
+        <div class="stat-card"><span>Published</span><strong id="published-count">2</strong><small>Live content</small></div>
+        <div class="stat-card"><span>Avg. velocity</span><strong>5.6</strong><small>Posts / week · <b>↑ 12%</b></small></div>
+      </div>
+
+      <div class="dashboard-grid" id="analytics">
+        <section class="panel panel--dark topic-panel">
+          <div class="panel-heading"><div><span class="eyebrow eyebrow--dark">Signal intelligence</span><h3>Data-driven topic suggestions</h3></div><span class="badge badge--gold">✦ Updated today</span></div>
+          <div class="topic-layout">
+            <div class="topic-list">
+              <div class="topic-row"><div><span>AI Automation Playbooks</span><b class="positive">↑ 6</b></div><div class="progress"><span style="width:92%"></span></div></div>
+              <div class="topic-row"><div><span>No-Code Workflow Guides</span><b class="positive">↑ 3</b></div><div class="progress"><span style="width:84%"></span></div></div>
+              <div class="topic-row"><div><span>SEO for SaaS Founders</span><b class="negative">↓ 2</b></div><div class="progress"><span style="width:77%"></span></div></div>
+              <div class="topic-row"><div><span>LLM Agent Case Studies</span><b class="positive">↑ 9</b></div><div class="progress"><span style="width:71%"></span></div></div>
+              <div class="topic-row"><div><span>Short-Form Video Hooks</span><b class="negative">↓ 4</b></div><div class="progress"><span style="width:63%"></span></div></div>
+            </div>
+            <div class="velocity-card"><div class="velocity-title"><span>Publishing velocity</span><b>Last 7 days</b></div><div class="velocity-chart">
+              <i style="height:44%"></i><i style="height:78%"></i><i style="height:56%"></i><i style="height:100%"></i><i style="height:67%"></i><i style="height:33%"></i><i style="height:56%"></i>
+            </div><div class="velocity-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
+          </div>
+        </section>
+
+        <section class="panel panel--dark quick-actions">
+          <div class="panel-heading"><div><span class="eyebrow eyebrow--dark">Shortcuts</span><h3>Quick actions</h3></div><span class="settings">⚙</span></div>
+          <div class="quick-action-list">
+            <button class="quick-action" data-toast="Opening the editorial calendar…"><span>◫</span>Plan editorial calendar<b>→</b></button>
+            <button class="quick-action" data-toast="Starting a new AI-assisted draft…"><span>✎</span>Draft with AI<b>→</b></button>
+            <button class="quick-action" data-toast="Running SEO checks on your latest post…"><span>⌕</span>Optimize for SEO<b>→</b></button>
+            <button class="quick-action" data-toast="Loading this week's performance report…"><span>▥</span>Track performance<b>→</b></button>
+          </div>
+        </section>
+      </div>
+
+      <section class="panel panel--dark kanban-panel" id="workflows">
+        <div class="panel-heading"><div><span class="eyebrow eyebrow--dark">Content operations</span><h3>Editorial kanban</h3></div><button class="secondary-button" id="new-post">＋ New post</button></div>
+        <div class="kanban-grid">
+          <div class="kanban-column"><div class="kanban-heading"><span class="status-dot draft"></span>Drafts <b id="draft-column-count">3</b></div><div class="kanban-cards" id="drafts"></div></div>
+          <div class="kanban-column"><div class="kanban-heading"><span class="status-dot scheduled"></span>Scheduled <b id="scheduled-column-count">2</b></div><div class="kanban-cards" id="scheduled"></div></div>
+          <div class="kanban-column"><div class="kanban-heading"><span class="status-dot published"></span>Published <b id="published-column-count">2</b></div><div class="kanban-cards" id="published"></div></div>
+        </div>
+      </section>
+
+      <div class="review-grid">
+        <section class="panel panel--dark draft-panel">
+          <div class="panel-heading"><div><span class="eyebrow eyebrow--dark">Draft reviewer</span><h3>10 AI Trends Reshaping Content Teams</h3></div><span class="badge" id="review-count">0/3 applied</span></div>
+          <p class="draft-copy">AI is transforming content marketing <span class="editable" data-original="at an unprecedented pace" data-revision="faster than most teams can track">at an unprecedented pace</span>. Businesses that adopt automation early <span class="editable" data-original="gain a significant advantage" data-revision="pull ahead of slower competitors">gain a significant advantage</span> over competitors who are slow to adapt. From draft generation to SEO optimization, machine learning tools <span class="editable" data-original="are becoming essential" data-revision="have become essential">are becoming essential</span> to how modern content teams operate.</p>
+        </section>
+        <section class="panel panel--dark suggestions-panel">
+          <div class="panel-heading"><div><span class="eyebrow eyebrow--dark">AI review</span><h3>Suggested improvements</h3></div></div>
+          <div class="suggestion-list">
+            <article class="suggestion-card"><p>Sharper pacing — replaces a stock phrase with a concrete claim.</p><div><span>“faster than most teams can track”</span><button class="suggestion-button" data-suggestion="0">Apply →</button></div></article>
+            <article class="suggestion-card"><p>Shorter and more direct; keeps the sentence moving.</p><div><span>“pull ahead of slower competitors”</span><button class="suggestion-button" data-suggestion="1">Apply →</button></div></article>
+            <article class="suggestion-card"><p>Tense correction — the shift already happened, not still happening.</p><div><span>“have become essential”</span><button class="suggestion-button" data-suggestion="2">Apply →</button></div></article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container site-footer__inner"><span>AI Content Automation Hub</span><span>Built by Takieddine Drici</span></div></footer>
+<script src="main.js"></script>
+</body>
+</html>
